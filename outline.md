@@ -103,7 +103,6 @@ Mobile friendly
 - Heres what i offer
     - Hi res for print
     - Online gallery
-    - 
 
 ## Blog
 
