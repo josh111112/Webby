@@ -1,18 +1,108 @@
-- Big photo on the left with text inviting them to fill out form below 
-|
-|
-- Smaller photo on the left
-    - Underneath small text promising quick response time
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- side navigation bar-->
+        <!-- Home button -->
+        <!-- Services button -->
+        <!-- Portfolio button -->
+        <!-- Blog button -->
+        <!-- About button -->
+        <!-- Contact button -->
+    <nav class="side-nav">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="current">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- - Big photo on the left with text inviting them to fill out form below 
+    
+    
+    - Smaller photo on the left
+        - Underneath small text promising quick response time
 
-- Text on the right with details on what to fill in the form
+    - Text on the right with details on what to fill in the form
 
-- form asking for:
-    - full name of person and partner
-    - email
-    - date of wedding
-    - share vision/tell me about yourself
-        - tell me about you two, what do you like to do in your free time
-        - how do you imagine your special day
-        - fill me in on all the details
-    - instagram accounts
-    - submit
+    - form asking for:
+        - full name of person and partner
+        - email
+        - date of wedding
+        - share vision/tell me about yourself
+            - tell me about you two, what do you like to do in your free time
+            - how do you imagine your special day
+            - fill me in on all the details
+        - instagram accounts ??
+        - submit -->
+    <div class="contact-form-container">
+        <!-- TODO: FIX - also add free form service to send email-->
+        <form class="contact-form">
+            <h2>Let's Connect!</h2>
+            
+            <div class="form-group">
+                <label for="couple-names">Full Names (You & Your Partner):</label>
+                <input type="text" id="couple-names" name="couple-names" placeholder="John Smith & Jane Doe" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="wedding-date">Wedding Date:</label>
+                <input type="date" id="wedding-date" name="wedding-date" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="vision">Share Your Vision:</label>
+                <textarea id="vision" name="vision" rows="8" placeholder="Tell me about you two - what do you like to do in your free time? How do you imagine your special day? Fill me in on all the details!" required></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="instagram">Instagram Accounts (optional):</label>
+                <input type="text" id="instagram" name="instagram" placeholder="@yourusername, @partnerusername">
+            </div>
+            
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+
+    <!-- Info bar -->
+        <!-- Brand -->
+        <!-- Social media buttons -->
+        <!-- Phone Number -->
+        <!-- Email -->
+    <div class="info-bar">
+        <!-- TODO: add photo above-->
+        <div class="brand">
+            <h1>I forgor</h1>
+        </div>
+        <div class="social-media">
+            <p>Follow me at</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/brandname" target="_blank">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+                <a href="https://www.facebook.com/brandname" target="_blank">
+                    <i class="fab fa-facebook"></i> Facebook
+                </a>
+            </div>
+        </div>
+        <div class="contact-info">
+            <div class="phone-number">
+                <p>(616) 425-1061</p>
+            </div>
+            <div class="email">
+                <p>i.forgor@gmail.com</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
