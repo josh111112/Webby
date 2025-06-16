@@ -247,7 +247,7 @@ body {
 .contact-button-container {
     display: flex;
     justify-content: center;
-    margin: 40px 0 100px 0;
+    margin: 40px 0 40px 0;
 }
 
 .contact-btn {
@@ -256,7 +256,7 @@ body {
     padding: 15px 30px;
     border: none;
     border-radius: 12px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     font-family: "Courier New", Courier, monospace;
     text-decoration: none;
@@ -265,8 +265,8 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 300px;
-    height: 50px;
+    width: 250px;
+    height: 30px;
     position: relative;
     overflow: hidden;
     transition: color 0.4s ease;
@@ -426,12 +426,73 @@ body {
     line-height: 1.5;
 }
 
+.photos-and-location-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 60px 5%;
+    gap: 40px;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.wedding-photos-container {
+    flex: 1;
+    position: relative;
+    max-width: 45%;
+    min-width: 300px;
+    height: 500px;
+}
+
+.wedding-main-photo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80%;
+    height: 400px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.wedding-under-main-photo {
+    position: absolute;
+    right: -20%;
+    bottom: 10;
+    width: 70%;
+    height: 480px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    z-index: 2;
+}
+
 .location-container {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    margin: 40px 0;
+    max-width: 45%;
+    padding: 40px;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.location-container h2 {
+    margin-bottom: 20px;
+    font-family: Copperplate, "Copperplate Gothic Light", serif;
+    font-weight: 300;
+    width: 100%;
+    text-align: left;
+}
+
+.location-container p {
+    font-family: "Courier New", Courier, monospace;
+    line-height: 1.5;
+    margin: 0;
+    text-align: left;
 }
 
 .bride-girl-closeup-photo {
@@ -451,6 +512,18 @@ body {
     right: 18%;
     width: 250px;
     height: 375px;
+    object-fit: cover;
+    z-index: 1002;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.scroll-photo {
+    position: absolute;
+    top: calc(165vh + 400px);
+    left: 30%;
+    width: 375px;
+    height: 275px;
+    object-fit: cover;
     z-index: 1002;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
