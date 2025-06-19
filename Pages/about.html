@@ -3,70 +3,191 @@
 <head>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
 </head>
 <body>
-    <!-- side navigation bar-->
-        <!-- Home button -->
-        <!-- Services button -->
-        <!-- Portfolio button -->
-        <!-- Blog button -->
-        <!-- About button -->
-        <!-- Contact button -->
-    <nav class="side-nav">
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="about.html" class="current">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    <div class="page-container">
+        <main class="main-content">
+            <!-- About Hero Section -->
+            <section class="about-hero">
+                <div class="about-hero-content">
+                    <div class="about-text">
+                        <p class="intro-text">Hi, I'm Josh</p>
+                        <h1 class="main-title">Michigan Wedding Photographer</h1>
+                        <p class="hero-description">
+                            Your wedding day is uniquely yours—a celebration of your love story, your way. 
+                            I'm here to capture those genuine moments, the laughter between tears, 
+                            and the quiet glances that speak volumes. This is your space, your day, 
+                            and I'm honored to document it authentically.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="portfolio.html" class="explore-btn">Explore My Work</a>
+                            <a href="contact.html" class="contact-hero-btn">Let's Connect</a>
+                        </div>
+                    </div>
+                    <div class="about-hero-image">
+                        <img src="Assets/photographer-portrait.jpg" alt="Josh - Wedding Photographer" class="josh-photo">
+                    </div>
+                </div>
+            </section>
 
-    <!-- - Hi I'm Josh (small text)
-    - Michigan Wedding photographer (big text)
-    - My photo on the left side
-    - Explain how the day is about them and its their space
-    - Invite them to go further and see the rest of your site
-    - Contact button
-    
-    
-    - Photos of my work on the right side
-    - Talk about how the person reading this (likely bride) if they love the same things as you (list things brides also like)
-    - Ensure it is something they will keep talking about
-    - Pricing and packages button
-    
-    
-    - Static image with text that moves with scroll
-    
-    
-    - Photos on the left
-    - Story about how I've always loved photography
-    - Call to action
-    - Packages and pricing
-    
-    
-    - Get to know eachother
-        - Send inquiry or chat with me button -->
+            <!-- Passion & Connection Section -->
+            <section class="passion-section">
+                <div class="passion-content">
+                    <div class="passion-images">
+                        <img src="Assets/wedding-detail.jpg" alt="Wedding Details" class="passion-photo main-passion">
+                        <img src="Assets/couple-candid.jpg" alt="Couple Candid Moment" class="passion-photo secondary-passion">
+                    </div>
+                    <div class="passion-text">
+                        <h2>Creating Memories That Last Forever</h2>
+                        <p>
+                            If you're someone who values authentic moments over posed perfection, 
+                            who gets excited about handwritten vows and dancing until your feet hurt, 
+                            who believes that the best photos capture real emotions—then we're going 
+                            to get along perfectly.
+                        </p>
+                        <p>
+                            I love working with couples who appreciate the little details: 
+                            the way morning light filters through lace, the nervous excitement 
+                            before walking down the aisle, and the pure joy of being surrounded 
+                            by everyone you love most.
+                        </p>
+                        <p class="emphasis-text">
+                            These aren't just photos—they're the stories you'll share for decades to come.
+                        </p>
+                        <div class="passion-cta">
+                            <a href="services.html" class="services-link-btn">View Packages & Pricing</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Parallax Story Section -->
+            <section class="story-parallax">
+                <div class="story-overlay">
+                    <div class="story-text">
+                        <h2>Capturing Love Stories Across Michigan</h2>
+                        <p>From intimate ceremonies in Grand Rapids to lakeside celebrations along Lake Michigan, 
+                           every wedding tells a unique story worth preserving.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Personal Story Section -->
+            <section class="personal-story">
+                <div class="story-content">
+                    <div class="story-images">
+                        <img src="Assets/behind-scenes.jpg" alt="Josh at Work" class="story-photo">
+                        <img src="Assets/camera-gear.jpg" alt="Photography Equipment" class="story-photo-small">
+                    </div>
+                    <div class="story-text-content">
+                        <h2>My Journey Behind the Lens</h2>
+                        <p>
+                            Photography has been my passion since I picked up my first camera in college. 
+                            What started as a hobby quickly became an obsession—I was captivated by the 
+                            power of freezing a single moment in time and the emotions it could convey.
+                        </p>
+                        <p>
+                            After years of photographing everything from landscapes to portraits, 
+                            I discovered my true calling: wedding photography. There's something magical 
+                            about being present for one of the most important days in a couple's life, 
+                            trusted to preserve those fleeting moments of pure joy and love.
+                        </p>
+                        <p>
+                            Every wedding is an adventure, every couple has a story worth telling, 
+                            and I'm here to make sure your story is told beautifully.
+                        </p>
+                        <div class="story-cta">
+                            <a href="portfolio.html" class="portfolio-link-btn">See My Latest Work</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Approach Section -->
+            <section class="approach-section">
+                <div class="approach-content">
+                    <h2>My Approach</h2>
+                    <div class="approach-grid">
+                        <div class="approach-item">
+                            <div class="approach-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <h3>Authentic Moments</h3>
+                            <p>I focus on capturing genuine emotions and natural interactions rather than stiff poses.</p>
+                        </div>
+                        <div class="approach-item">
+                            <div class="approach-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3>Personal Connection</h3>
+                            <p>Getting to know you as a couple helps me tell your unique story through my lens.</p>
+                        </div>
+                        <div class="approach-item">
+                            <div class="approach-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h3>Stress-Free Experience</h3>
+                            <p>Your wedding day should be about celebrating—I handle the photography so you can focus on each other.</p>
+                        </div>
+                        <div class="approach-item">
+                            <div class="approach-icon">
+                                <i class="fas fa-gem"></i>
+                            </div>
+                            <h3>Timeless Quality</h3>
+                            <p>I create images that will look as beautiful decades from now as they do today.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Get to Know Each Other CTA -->
+            <section class="connection-cta">
+                <div class="connection-content">
+                    <h2>Let's Get to Know Each Other</h2>
+                    <p>
+                        The best photos happen when there's trust and connection between us. 
+                        I'd love to hear about your vision, your story, and what makes your 
+                        relationship special. Whether you want to chat over coffee or send 
+                        me all the details in an inquiry, I'm here to listen.
+                    </p>
+                    <div class="connection-buttons">
+                        <a href="contact.html" class="inquiry-btn">Send an Inquiry</a>
+                        <a href="mailto:joshuajohnsonvisuals@gmail.com" class="chat-btn">
+                            <i class="fas fa-envelope"></i> Chat With Me
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <nav class="side-nav">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html" class="current">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
 
     <!-- Info bar -->
         <!-- Brand -->
         <!-- Social media buttons -->
         <!-- Phone Number -->
         <!-- Email -->
-    <div class="info-bar">
+    <footer class="info-bar">
         <!-- TODO: add photo above-->
         <div class="brand">
-            <h1>I forgor</h1>
+            <h1>Joshua Johnson Visuals</h1>
         </div>
         <div class="social-media">
             <p>Follow me at</p>
             <div class="social-links">
-                <a href="https://www.instagram.com/brandname" target="_blank">
+                <a href="https://www.instagram.com/joshuajohnsonvisuals" target="_blank">
                     <i class="fab fa-instagram"></i> Instagram
                 </a>
-                <a href="https://www.facebook.com/brandname" target="_blank">
+                <a href="https://www.facebook.com/profile.php?id=61577020702143" target="_blank">
                     <i class="fab fa-facebook"></i> Facebook
                 </a>
             </div>
@@ -76,9 +197,9 @@
                 <p>(616) 425-1061</p>
             </div>
             <div class="email">
-                <p>i.forgor@gmail.com</p>
+                <p>joshuajohnsonvisuals@gmail.com</p>
             </div>
         </div>
-    </div>
+    </footer>
 </body>
 </html>

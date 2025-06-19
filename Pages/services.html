@@ -5,57 +5,251 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    
-    <!-- side navigation bar-->
-        <!-- Home button -->
-        <!-- Services button -->
-        <!-- Portfolio button -->
-        <!-- Blog button -->
-        <!-- About button -->
-        <!-- Contact button -->
-    <nav class="side-nav">
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="services.html" class="current">Services</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    <!-- - My process
-    - The preproccess to how everything is done
-        - Guidance
-        - FT
-        - 2nd meeting with specific written shots they want
+    <div class="page-container">
+        
+        <!-- side navigation bar-->
+        
 
-    - What is inlcuded in each package
-        - Make it the cross and check mark table style but more artsy
-            - Each column is a different package
+        <main class="main-content">
+            <!-- Hero Section -->
+            <div class="services-hero">
+                <img src="Assets/main.jpg" alt="Wedding Photography Services" class="services-hero-image">
+                <div class="services-hero-overlay">
+                    <div class="services-hero-text">
+                        <h1>Wedding Photography<br>Services</h1>
+                        <p class="services-hero-tagline">Capturing your perfect day with timeless elegance</p>
+                    </div>
+                </div>
+            </div>
 
-    - Most couples invest X on their wedding photographer
+            <!-- Services Overview -->
+            <div class="services-overview">
+                <div class="services-overview-content">
+                    <h2>Your Love Story Deserves Perfect Moments</h2>
+                    <p>Every wedding is unique, and so is every love story. I specialize in capturing the authentic emotions, intimate moments, and joyful celebrations that make your wedding day truly special. From the getting-ready moments to the last dance, I'm here to document every precious memory.</p>
+                </div>
+                <div class="services-overview-image">
+                    <img src="Assets/main.jpg" alt="Wedding couple" class="overview-photo">
+                </div>
+            </div>
 
-    - Heres what i offer
-        - Hi res for print
-        - Online gallery -->
+            <!-- Service Packages -->
+            <div class="packages-section">
+                <div class="packages-header">
+                    <h2>Wedding Photography Packages</h2>
+                    <p>Choose the perfect coverage for your special day</p>
+                </div>
+
+                <div class="packages-container">
+                    <!-- Essential Package -->
+                    <div class="package-card">
+                        <div class="package-image">
+                            <img src="Assets/main.jpg" alt="Essential Package" class="package-photo">
+                        </div>
+                        <div class="package-content">
+                            <h3>Essential</h3>
+                            <div class="package-price">$XX</div>
+                            <div class="package-duration">6 Hours Coverage</div>
+                            <ul class="package-features">
+                                <li><i class="fas fa-check"></i> Pre-wedding consultation</li>
+                                <li><i class="fas fa-check"></i> 6 hours of wedding day coverage</li>
+                                <li><i class="fas fa-check"></i> 300+ edited high-resolution images</li>
+                                <li><i class="fas fa-check"></i> Online gallery for 1 year</li>
+                                <li><i class="fas fa-check"></i> Personal printing rights</li>
+                                <li><i class="fas fa-check"></i> 2-week delivery</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Premium Package -->
+                    <div class="package-card featured">
+                        <div class="package-badge">Most Popular</div>
+                        <div class="package-image">
+                            <img src="Assets/main.jpg" alt="Premium Package" class="package-photo">
+                        </div>
+                        <div class="package-content">
+                            <h3>Premium</h3>
+                            <div class="package-price">$XX</div>
+                            <div class="package-duration">8 Hours Coverage</div>
+                            <ul class="package-features">
+                                <li><i class="fas fa-check"></i> Engagement session included</li>
+                                <li><i class="fas fa-check"></i> Pre-wedding consultation</li>
+                                <li><i class="fas fa-check"></i> 8 hours of wedding day coverage</li>
+                                <li><i class="fas fa-check"></i> 500+ edited high-resolution images</li>
+                                <li><i class="fas fa-check"></i> Online gallery for 2 years</li>
+                                <li><i class="fas fa-check"></i> Personal printing rights</li>
+                                <li><i class="fas fa-check"></i> 20 fine art prints (5x7)</li>
+                                <li><i class="fas fa-check"></i> 1-week delivery</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Luxury Package -->
+                    <div class="package-card">
+                        <div class="package-image">
+                            <img src="Assets/main.jpg" alt="Luxury Package" class="package-photo">
+                        </div>
+                        <div class="package-content">
+                            <h3>Luxury</h3>
+                            <div class="package-price">$XX</div>
+                            <div class="package-duration">Full Day Coverage</div>
+                            <ul class="package-features">
+                                <li><i class="fas fa-check"></i> Engagement session included</li>
+                                <li><i class="fas fa-check"></i> Pre-wedding consultation</li>
+                                <li><i class="fas fa-check"></i> Full day coverage (10+ hours)</li>
+                                <li><i class="fas fa-check"></i> 700+ edited high-resolution images</li>
+                                <li><i class="fas fa-check"></i> Second photographer</li>
+                                <li><i class="fas fa-check"></i> Online gallery for 3 years</li>
+                                <li><i class="fas fa-check"></i> Personal printing rights</li>
+                                <li><i class="fas fa-check"></i> Custom wedding album (30 pages)</li>
+                                <li><i class="fas fa-check"></i> 40 fine art prints (5x7)</li>
+                                <li><i class="fas fa-check"></i> 5-day delivery</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Process Section -->
+            <div class="process-section">
+                <div class="process-content">
+                    <h2>My Process</h2>
+                    <div class="process-steps">
+                        <div class="process-step">
+                            <div class="step-number">01</div>
+                            <div class="step-content">
+                                <h3>Initial Consultation</h3>
+                                <p>We'll discuss your vision, timeline, and all the special details that make your wedding unique. This helps me understand your style and preferences.</p>
+                            </div>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-number">02</div>
+                            <div class="step-content">
+                                <h3>Engagement Session</h3>
+                                <p>A fun, relaxed photo session to get comfortable with each other and capture your love story before the big day.</p>
+                            </div>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-number">03</div>
+                            <div class="step-content">
+                                <h3>Wedding Day</h3>
+                                <p>I'll capture every moment from getting ready to the final dance, ensuring all your precious memories are beautifully documented.</p>
+                            </div>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-number">04</div>
+                            <div class="step-content">
+                                <h3>Post-Production</h3>
+                                <p>I carefully edit and enhance each image to create a cohesive, beautiful collection that tells your wedding story.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="process-image">
+                    <img src="Assets/main.jpg" alt="Wedding photography process" class="process-photo">
+                </div>
+            </div>
+
+            <!-- Additional Services -->
+            <div class="additional-services">
+                <h2>Additional Services</h2>
+                <div class="additional-services-grid">
+                    <div class="additional-service">
+                        <img src="Assets/main.jpg" alt="Engagement Session" class="service-icon">
+                        <h3>Engagement Sessions</h3>
+                        <p>Starting at $XX</p>
+                        <p>Capture your love story before the big day with a relaxed, fun photo session.</p>
+                    </div>
+                    <div class="additional-service">
+                        <img src="Assets/main.jpg" alt="Bridal Portraits" class="service-icon">
+                        <h3>Bridal Portraits</h3>
+                        <p>Starting at $XX</p>
+                        <p>Beautiful solo portraits of the bride in her wedding dress.</p>
+                    </div>
+                    <div class="additional-service">
+                        <img src="Assets/main.jpg" alt="Rehearsal Dinner" class="service-icon">
+                        <h3>Rehearsal Dinner</h3>
+                        <p>Starting at $XX</p>
+                        <p>Document the intimate moments with family and friends the night before.</p>
+                    </div>
+                    <div class="additional-service">
+                        <img src="Assets/main.jpg" alt="Day After Session" class="service-icon">
+                        <h3>Day After Session</h3>
+                        <p>Starting at $XX</p>
+                        <p>Relaxed portraits in your wedding attire without the time pressure.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Investment Section -->
+            <div class="investment-section">
+                <div class="investment-content">
+                    <h2>Investment</h2>
+                    <p>Most couples invest between $XX - $XX on their wedding photography. I believe your wedding photos are one of the most important investments you'll make - they're the only thing from your wedding day that increases in value over time.</p>
+                    <div class="investment-features">
+                        <div class="investment-feature">
+                            <i class="fas fa-camera"></i>
+                            <h4>Professional Equipment</h4>
+                            <p>Top-of-the-line cameras and lenses for stunning image quality</p>
+                        </div>
+                        <div class="investment-feature">
+                            <i class="fas fa-cloud"></i>
+                            <h4>Secure Backup</h4>
+                            <p>All images are backed up in multiple locations for safety</p>
+                        </div>
+                        <div class="investment-feature">
+                            <i class="fas fa-palette"></i>
+                            <h4>Professional Editing</h4>
+                            <p>Each image is carefully edited to perfection</p>
+                        </div>
+                        <div class="investment-feature">
+                            <i class="fas fa-download"></i>
+                            <h4>High-Resolution Files</h4>
+                            <p>Full resolution images for printing and sharing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="services-cta">
+                <div class="services-cta-content">
+                    <h2>Ready to Begin?</h2>
+                    <p>Let's discuss your wedding photography needs and create something beautiful together.</p>
+                    <div class="services-button-container">
+                        <a href="contact.html" class="services-btn">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="services-cta-image">
+                    <img src="Assets/main.jpg" alt="Wedding couple" class="cta-photo">
+                </div>
+            </div>
+        </main>
+        <nav class="side-nav">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="services.html" class="current">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
 
     <!-- Info bar -->
-        <!-- Brand -->
-        <!-- Social media buttons -->
-        <!-- Phone Number -->
-        <!-- Email -->
-    <div class="info-bar">
+    <footer class="info-bar">
         <!-- TODO: add photo above-->
         <div class="brand">
-            <h1>I forgor</h1>
+            <h1>Joshua Johnson Visuals</h1>
         </div>
         <div class="social-media">
             <p>Follow me at</p>
             <div class="social-links">
-                <a href="https://www.instagram.com/brandname" target="_blank">
+                <a href="https://www.instagram.com/joshuajohnsonvisuals" target="_blank">
                     <i class="fab fa-instagram"></i> Instagram
                 </a>
-                <a href="https://www.facebook.com/brandname" target="_blank">
+                <a href="https://www.facebook.com/profile.php?id=61577020702143" target="_blank">
                     <i class="fab fa-facebook"></i> Facebook
                 </a>
             </div>
@@ -65,9 +259,9 @@
                 <p>(616) 425-1061</p>
             </div>
             <div class="email">
-                <p>i.forgor@gmail.com</p>
+                <p>joshuajohnsonvisuals@gmail.com</p>
             </div>
         </div>
-    </div>
+    </footer>
 </body>
 </html>

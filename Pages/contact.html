@@ -2,95 +2,130 @@
 <html>
 <head>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="formStyles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- side navigation bar-->
-        <!-- Home button -->
-        <!-- Services button -->
-        <!-- Portfolio button -->
-        <!-- Blog button -->
-        <!-- About button -->
-        <!-- Contact button -->
-    <nav class="side-nav">
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html" class="current">Contact</a></li>
-        </ul>
-    </nav>
-    <!-- - Big photo on the left with text inviting them to fill out form below 
-    
-    
-    - Smaller photo on the left
-        - Underneath small text promising quick response time
+    <div class="page-container">
+        <main class="main-content">
+            <!-- Contact Hero Section -->
+            <div class="contact-hero">
+                <div class="contact-hero-content">
+                    <h1>Let's Create Something Beautiful Together</h1>
+                    <p>Ready to capture your special moments? I'd love to hear about your vision and discuss how we can make it come to life.</p>
+                </div>
+            </div>
 
-    - Text on the right with details on what to fill in the form
+            <!-- Contact Form Section -->
+            <div class="contact-form-section">
+                <div class="contact-form-wrapper">
+                    <!-- Left Side - Image and Info -->
+                    <div class="contact-left">
+                        <div class="contact-image">
+                            <img src="../Images/photographer-at-work.jpg" alt="Behind the scenes" class="contact-photo">
+                        </div>
+                        <div class="response-promise">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <!-- TODO: update text -->
+                                <h4>Quick Response</h4>
+                                <p>I typically respond within 24 hours</p>
+                            </div>
+                        </div>
+                    </div>
 
-    - form asking for:
-        - full name of person and partner
-        - email
-        - date of wedding
-        - share vision/tell me about yourself
-            - tell me about you two, what do you like to do in your free time
-            - how do you imagine your special day
-            - fill me in on all the details
-        - instagram accounts ??
-        - submit -->
-    <div class="contact-form-container">
-        <!-- TODO: FIX - also add free form service to send email-->
-        <form class="contact-form">
-            <h2>Let's Connect!</h2>
-            
-            <div class="form-group">
-                <label for="couple-names">Full Names (You & Your Partner):</label>
-                <input type="text" id="couple-names" name="couple-names" placeholder="John Smith & Jane Doe" required>
+                    <!-- Right Side - Form -->
+                    <div class="contact-right">
+                        <div class="form-header">
+                            <h2>Tell Me About Your Vision</h2>
+                            <p>Fill out the form below and let's start planning something amazing together.</p>
+                        </div>
+
+                        <form
+                            action="https://formspree.io/f/xqablnrq"
+                            class="enhanced-form"
+                            target="_top"
+                            method="POST"
+                        >
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="your-name">Your Name</label>
+                                    <input type="text" id="your-name" name="your_name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="partner-name">Partner's Name</label>
+                                    <input type="text" id="partner-name" name="partner_name">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="wedding-date">Wedding Date</label>
+                                    <input type="date" id="wedding-date" name="wedding_date">
+                                </div>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label for="vision">Tell Me About Your Vision</label>
+                                <textarea id="vision" name="vision" rows="4" placeholder="Share your story... What do you love doing together? How do you imagine your special day? Any specific ideas or inspiration you'd like to discuss?" required></textarea>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="instagram-yours">Your Instagram (optional)</label>
+                                    <input type="text" id="instagram-yours" name="instagram_yours" placeholder="@yourusername">
+                                </div>
+                                <div class="form-group">
+                                    <label for="instagram-partner">Partner's Instagram (optional)</label>
+                                    <input type="text" id="instagram-partner" name="instagram_partner" placeholder="@partnerusername">
+                                </div>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label for="additional-info">Anything Else?</label>
+                                <textarea id="additional-info" name="additional_info" rows="3" placeholder="Budget range, location preferences, timeline, or any other details you'd like to share..."></textarea>
+                            </div>
+
+                            <div class="form-submit">
+                                <button type="submit" class="submit-button">
+                                    <span>Send My Message</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
-            
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
-            </div>
-            
-            <div class="form-group">
-                <label for="wedding-date">Wedding Date:</label>
-                <input type="date" id="wedding-date" name="wedding-date" required>
-            </div>
-            
-            <div class="form-group">
-                <label for="vision">Share Your Vision:</label>
-                <textarea id="vision" name="vision" rows="8" placeholder="Tell me about you two - what do you like to do in your free time? How do you imagine your special day? Fill me in on all the details!" required></textarea>
-            </div>
-            
-            <div class="form-group">
-                <label for="instagram">Instagram Accounts (optional):</label>
-                <input type="text" id="instagram" name="instagram" placeholder="@yourusername, @partnerusername">
-            </div>
-            
-            <button type="submit" class="submit-btn">Submit</button>
-        </form>
+        </main>
+        
+        <nav class="side-nav">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="current">Contact</a></li>
+            </ul>
+        </nav>
     </div>
 
     <!-- Info bar -->
-        <!-- Brand -->
-        <!-- Social media buttons -->
-        <!-- Phone Number -->
-        <!-- Email -->
-    <div class="info-bar">
-        <!-- TODO: add photo above-->
+    <footer class="info-bar">
         <div class="brand">
-            <h1>I forgor</h1>
+            <h1>Joshua Johnson Visuals</h1>
         </div>
         <div class="social-media">
             <p>Follow me at</p>
             <div class="social-links">
-                <a href="https://www.instagram.com/brandname" target="_blank">
+                <a href="https://www.instagram.com/joshuajohnsonvisuals" target="_blank">
                     <i class="fab fa-instagram"></i> Instagram
                 </a>
-                <a href="https://www.facebook.com/brandname" target="_blank">
+                <a href="https://www.facebook.com/profile.php?id=61577020702143" target="_blank">
                     <i class="fab fa-facebook"></i> Facebook
                 </a>
             </div>
@@ -100,9 +135,9 @@
                 <p>(616) 425-1061</p>
             </div>
             <div class="email">
-                <p>i.forgor@gmail.com</p>
+                <p>joshuajohnsonvisuals@gmail.com</p>
             </div>
         </div>
-    </div>
+    </footer>
 </body>
 </html>

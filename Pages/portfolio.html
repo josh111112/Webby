@@ -5,44 +5,255 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- side navigation bar-->
-        <!-- Home button -->
-        <!-- Services button -->
-        <!-- Portfolio button -->
-        <!-- Blog button -->
-        <!-- About button -->
-        <!-- Contact button -->
-    <nav class="side-nav">
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="portfolio.html" class="current">Portfolio</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    <!-- - Wedding portfolio (centered)
-    - Structured wedding photos
-    - Send inquiry button -->
+    <div class="page-container">
+        <main class="main-content">
+            <!-- Portfolio Hero Section -->
+            <section class="services-hero">
+                <img src="Assets/wedding-cheers.jpg" alt="Wedding Photography" class="services-hero-image">
+                <div class="services-hero-overlay">
+                    <div class="services-hero-text">
+                        <h1>Portfolio</h1>
+                        <p class="services-hero-tagline">Capturing Love Stories Through Timeless Moments</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Portfolio Overview -->
+            <section class="services-overview">
+                <div class="services-overview-content">
+                    <h2>Every Love Story is Unique</h2>
+                    <p>From intimate ceremonies to grand celebrations, I specialize in capturing the authentic emotions and precious moments that make your wedding day unforgettable. Browse through my recent work to see how I blend artistic vision with documentary storytelling to create images that will be treasured for generations.</p>
+                </div>
+                <div class="services-overview-image">
+                    <img src="Assets/sitting.jpg" alt="Wedding Couple" class="overview-photo">
+                </div>
+            </section>
+
+            <!-- Wedding Galleries -->
+            <section class="portfolio-galleries">
+                <div class="gallery-header">
+                    <h2>Recent Weddings</h2>
+                    <p>A collection of love stories beautifully told</p>
+                </div>
+
+                <!-- Gallery Grid -->
+                <div class="gallery-grid">
+                    <!-- Wedding 1 -->
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <img src="Assets/wedding-cheers.jpg" alt="Sarah & Michael's Wedding" class="gallery-photo">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Sarah & Michael</h3>
+                                    <p>Vineyard Estate Wedding</p>
+                                    <span class="view-gallery">View Gallery</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Wedding 2 -->
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <img src="Assets/sitting.jpg" alt="Emma & David's Wedding" class="gallery-photo">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Emma & David</h3>
+                                    <p>Garden Party Wedding</p>
+                                    <span class="view-gallery">View Gallery</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Wedding 3 -->
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <img src="Assets/wedding-cheers.jpg" alt="Jessica & Ryan's Wedding" class="gallery-photo">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Jessica & Ryan</h3>
+                                    <p>Rustic Barn Wedding</p>
+                                    <span class="view-gallery">View Gallery</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Wedding 4 -->
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <img src="Assets/sitting.jpg" alt="Amanda & Chris's Wedding" class="gallery-photo">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Amanda & Chris</h3>
+                                    <p>Beachside Ceremony</p>
+                                    <span class="view-gallery">View Gallery</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Wedding 5 -->
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <img src="Assets/wedding-cheers.jpg" alt="Lisa & Mark's Wedding" class="gallery-photo">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Lisa & Mark</h3>
+                                    <p>Historic Mansion Wedding</p>
+                                    <span class="view-gallery">View Gallery</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Wedding 6 -->
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <img src="Assets/sitting.jpg" alt="Rachel & Tom's Wedding" class="gallery-photo">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Rachel & Tom</h3>
+                                    <p>Mountain Lodge Wedding</p>
+                                    <span class="view-gallery">View Gallery</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Photography Styles Section -->
+            <section class="photography-styles">
+                <div class="styles-header">
+                    <h2>Photography Styles</h2>
+                    <p>From candid moments to artistic portraits</p>
+                </div>
+
+                <div class="styles-grid">
+                    <div class="style-category">
+                        <div class="style-image">
+                            <img src="Assets/wedding-cheers.jpg" alt="Candid Photography" class="style-photo">
+                        </div>
+                        <div class="style-content">
+                            <h3>Candid Moments</h3>
+                            <p>Authentic emotions captured naturally as they unfold throughout your special day.</p>
+                        </div>
+                    </div>
+
+                    <div class="style-category">
+                        <div class="style-image">
+                            <img src="Assets/sitting.jpg" alt="Portrait Photography" class="style-photo">
+                        </div>
+                        <div class="style-content">
+                            <h3>Romantic Portraits</h3>
+                            <p>Beautifully composed couple portraits that showcase your love and connection.</p>
+                        </div>
+                    </div>
+
+                    <div class="style-category">
+                        <div class="style-image">
+                            <img src="Assets/wedding-cheers.jpg" alt="Detail Photography" class="style-photo">
+                        </div>
+                        <div class="style-content">
+                            <h3>Wedding Details</h3>
+                            <p>Every detail matters - from rings and flowers to venue decor and personal touches.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Parallax Quote Section -->
+            <section class="parallax-section">
+                <div class="parallax-content">
+                    <h2>"Capturing moments that become memories"</h2>
+                    <p>Every wedding tells a unique story. Let me help you tell yours through timeless, beautiful photography that you'll treasure forever.</p>
+                </div>
+            </section>
+
+            <!-- Testimonials -->
+            <section class="testimonials-section">
+                <div class="testimonials-header">
+                    <h2>What Couples Say</h2>
+                    <p>Kind words from recent clients</p>
+                </div>
+
+                <div class="testimonials-grid">
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <i class="fas fa-quote-left"></i>
+                            <p>"Joshua captured our wedding day perfectly! His attention to detail and ability to make us feel comfortable resulted in the most beautiful photos. We couldn't be happier!"</p>
+                            <div class="testimonial-author">
+                                <strong>Sarah & Michael</strong>
+                                <span>Married June 2024</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <i class="fas fa-quote-left"></i>
+                            <p>"Professional, creative, and so easy to work with. Joshua made our engagement shoot and wedding day stress-free while delivering stunning photos that tell our love story."</p>
+                            <div class="testimonial-author">
+                                <strong>Emma & David</strong>
+                                <span>Married August 2024</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <i class="fas fa-quote-left"></i>
+                            <p>"The photos exceeded all our expectations! Joshua has such a great eye for capturing both the big moments and the little details that made our day special."</p>
+                            <div class="testimonial-author">
+                                <strong>Jessica & Ryan</strong>
+                                <span>Married September 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Call to Action -->
+            <section class="services-cta">
+                <div class="services-cta-content">
+                    <h2>Ready to Tell Your Love Story?</h2>
+                    <p>I'd love to hear about your wedding plans and discuss how we can create beautiful memories together. Let's schedule a consultation to talk about your vision and see if we're a perfect match.</p>
+                    <div class="contact-button-container">
+                        <a href="contact.html" class="contact-btn">Send Inquiry</a>
+                    </div>
+                </div>
+                <div class="services-cta-image">
+                    <img src="Assets/sitting.jpg" alt="Wedding Photography" class="cta-photo">
+                </div>
+            </section>
+        </main>
+        
+        <nav class="side-nav">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html" class="current">Portfolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
 
     <!-- Info bar -->
-        <!-- Brand -->
-        <!-- Social media buttons -->
-        <!-- Phone Number -->
-        <!-- Email -->
-    <div class="info-bar">
-        <!-- TODO: add photo above-->
+    <footer class="info-bar">
         <div class="brand">
-            <h1>I forgor</h1>
+            <h1>Joshua Johnson Visuals</h1>
         </div>
         <div class="social-media">
             <p>Follow me at</p>
             <div class="social-links">
-                <a href="https://www.instagram.com/brandname" target="_blank">
+                <a href="https://www.instagram.com/joshuajohnsonvisuals" target="_blank">
                     <i class="fab fa-instagram"></i> Instagram
                 </a>
-                <a href="https://www.facebook.com/brandname" target="_blank">
+                <a href="https://www.facebook.com/profile.php?id=61577020702143" target="_blank">
                     <i class="fab fa-facebook"></i> Facebook
                 </a>
             </div>
@@ -52,9 +263,9 @@
                 <p>(616) 425-1061</p>
             </div>
             <div class="email">
-                <p>i.forgor@gmail.com</p>
+                <p>joshuajohnsonvisuals@gmail.com</p>
             </div>
         </div>
-    </div>
+    </footer>
 </body>
 </html>
