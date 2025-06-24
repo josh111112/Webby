@@ -5,6 +5,12 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -17,6 +23,7 @@ body {
 .page-container {
     display: flex;
     flex: 1;
+    position: relative;
 }
 
 .main-content {
@@ -32,6 +39,7 @@ body {
     z-index: 1000;
     align-self: flex-start;
     height: fit-content;
+    position: relative;
 }   
 
 .side-nav ul {
@@ -616,9 +624,8 @@ body {
 
 /* Parallax Section Styles */
 .parallax-section {
-    width: 110vw;
+    width: 100vw;
     height: 60vh;
-    margin-left: calc(-50vw + 50%);
     background-image: url('Assets/sitting.jpg');
     background-attachment: fixed;
     background-position: center;
@@ -630,6 +637,11 @@ body {
     position: relative;
     overflow: hidden;
     z-index: 1100;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    left: 50%;
+    right: 50%;
+    position: relative;
 }
 
 .parallax-content {
