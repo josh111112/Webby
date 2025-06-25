@@ -5,11 +5,11 @@
 :root {
   --color-background: #e7e7e7;
   --color-background-alt: #888888;
-  --color-border-active: #da7105;
+  --color-border-active: #94ac78;
   --color-border-default: #d1d1d1;
-  --color-highlight: #fdcf4c;
-  --color-primary: #b64e08;
-  --color-primary-active: #79320e;
+  --color-highlight: #add085;
+  --color-primary: #94ac78;
+  --color-primary-active: #add085;
   --color-text-default: #262626;
   --color-text-muted: #4f4f4f;
 
@@ -92,12 +92,12 @@
   padding: 30px;
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
   border-radius: 15px;
-  border-left: 4px solid var(--color-primary);
+  border-left: 4px solid #94ac78;
 }
 
 .response-promise i {
   font-size: 2rem;
-  color: var(--color-primary);
+  color: #94ac78;
 }
 
 .response-promise h4 {
@@ -189,9 +189,9 @@
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: var(--color-primary);
+  border-color: #94ac78;
   background-color: #ffffff;
-  box-shadow: 0 0 0 3px rgba(182, 78, 8, 0.1);
+  box-shadow: 0 0 0 3px rgba(148, 172, 120, 0.1);
 }
 
 .form-group textarea {
@@ -214,7 +214,7 @@
 
 .submit-button {
   font-family: 'Montserrat', sans-serif;
-  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-active) 100%);
+  background: linear-gradient(135deg, #94ac78 0%, #add085 100%);
   color: white;
   border: none;
   padding: 18px 40px;
@@ -226,13 +226,13 @@
   align-items: center;
   gap: 12px;
   transition: all 0.3s ease;
-  box-shadow: 0 8px 25px rgba(182, 78, 8, 0.3);
+  box-shadow: 0 8px 25px rgba(148, 172, 120, 0.3);
   letter-spacing: 0.3px;
 }
 
 .submit-button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 12px 35px rgba(182, 78, 8, 0.4);
+  box-shadow: 0 12px 35px rgba(148, 172, 120, 0.4);
 }
 
 .submit-button:active {
