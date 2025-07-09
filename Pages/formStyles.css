@@ -22,7 +22,7 @@
 /* Full Page Contact Section */
 .contact-fullpage {
   min-height: 100vh;
-  background-image: url('Assets/main.jpg'); /* Default background - you can change this */
+  background-image: url('Assets/rings.jpg'); /* Default background - you can change this */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -74,14 +74,14 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 2.5rem;
   font-weight: 700;
-  color: #333;
+  color: #ffffff;
   margin-bottom: 20px;
   line-height: 1.2;
 }
 
 .form-header p {
   font-family: 'Montserrat', sans-serif;
-  color: #666;
+  color: #ffffff;
   font-size: 1.1rem;
   line-height: 1.6;
 }
@@ -135,13 +135,13 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 1.1rem;
   font-weight: 600;
-  color: #333;
+  color: #ffffff;
   margin: 0 0 5px 0;
 }
 
 .response-promise p {
   font-family: 'Montserrat', sans-serif;
-  color: #666;
+  color: #ffffff;
   margin: 0;
   font-size: 0.9rem;
 }
@@ -172,7 +172,7 @@
 .form-group label {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
-  color: #333;
+  color: #ffffff;
   font-size: 0.9rem;
   letter-spacing: 0.3px;
 }
@@ -186,6 +186,7 @@
   font-size: 0.95rem;
   transition: all 0.3s ease;
   background-color: rgba(255, 255, 255, 0.3);
+  color: #000000;
 }
 
 .form-group input:focus,
@@ -204,8 +205,13 @@
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-  color: #aaa;
+  color: #000;
   font-style: italic;
+}
+
+/* Specific styling for date input */
+.form-group input[type="date"] {
+  color: #000000 !important;
 }
 
 /* Submit Button */
@@ -495,7 +501,7 @@ fieldset {
 }
 
 .fs-input::placeholder {
-  color: var(--color-text-muted);
+  color: #000;
 }
 
 .fs-checkbox-group,
@@ -664,7 +670,7 @@ fieldset {
 }
 
 .fs-textarea::placeholder {
-  color: var(--color-text-muted);
+  color: #000;
 }
 
 /** Utilities **/
@@ -674,7 +680,7 @@ fieldset {
 }
 
 .fs-textarea::placeholder {
-  color: var(--color-text-muted);
+  color: #000;
 }
 
 .slider-label-container {

@@ -432,6 +432,7 @@ body {
     justify-content: space-between;
     padding: 10vw;  
     color: #ffffff;
+    /* background: rgba(128, 128, 128, 0.3); */
 }
 
 .main-photo {
@@ -446,7 +447,7 @@ body {
     width: auto;
     padding: 0;
     background: none;
-    color: inherit;
+    color: #000000;
 }
 
 .title-container {
@@ -462,10 +463,15 @@ body {
     margin: 0;
     line-height: 1.2;
     text-align: left;
+    background: linear-gradient(to right, #000000, #ffffff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
 }
 
 .hero-text h1.photographer {
-    font-size: 3.5rem;
+    font-size: 5rem;
     font-weight: 600;
     margin: 0;
     text-align: left;
@@ -1593,7 +1599,10 @@ body {
 .blog-hero {
     position: relative;
     height: 50vh;
-    background: linear-gradient(135deg, #94ac78 0%, #add085 100%);
+    background-image: url('Assets/holdinghands.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
