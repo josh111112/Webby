@@ -1,0 +1,460 @@
+/* Blog Post Specific Styles */
+
+/* Blog Post Hero Section */
+.blog-post-hero {
+    height: 60vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../Assets/background.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 0;
+}
+
+.blog-post-hero-overlay {
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.blog-post-hero-content {
+    text-align: center;
+    color: white;
+    max-width: 800px;
+}
+
+.blog-post-meta {
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.blog-post-category {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 5px 12px;
+    border-radius: 20px;
+    margin-right: 15px;
+    font-weight: 500;
+}
+
+.blog-post-date {
+    font-weight: 300;
+}
+
+.blog-post-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 20px 0;
+    line-height: 1.2;
+}
+
+.blog-post-subtitle {
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin-bottom: 30px;
+    opacity: 0.9;
+    line-height: 1.4;
+}
+
+.blog-post-info {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.blog-post-info i {
+    margin-right: 5px;
+}
+
+/* Blog Post Content */
+.blog-post-content {
+    background: white;
+    padding: 0;
+}
+
+.blog-post-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.blog-section {
+    margin-bottom: 40px;
+}
+
+.blog-section h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+    line-height: 1.3;
+}
+
+.blog-section h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+    line-height: 1.3;
+}
+
+.blog-section p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.blog-intro {
+    font-size: 1.3rem !important;
+    font-weight: 400;
+    color: #444 !important;
+    margin-bottom: 40px !important;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+/* Images */
+.blog-featured-image {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.featured-img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.blog-image {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.content-img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.image-caption {
+    font-size: 0.9rem;
+    color: #777;
+    font-style: italic;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+/* Lists */
+.blog-list,
+.blog-numbered-list {
+    margin: 20px 0;
+    padding-left: 0;
+}
+
+.blog-list li,
+.blog-numbered-list li {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.blog-list li:before {
+    content: "•";
+    color: #333;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.blog-numbered-list {
+    counter-reset: blog-counter;
+}
+
+.blog-numbered-list li {
+    counter-increment: blog-counter;
+}
+
+.blog-numbered-list li:before {
+    content: counter(blog-counter) ".";
+    color: #333;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+/* Quote */
+.blog-quote {
+    background: #f8f9fa;
+    border-left: 4px solid #333;
+    padding: 20px 30px;
+    margin: 30px 0;
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #444;
+    border-radius: 0 8px 8px 0;
+}
+
+/* Call to Action */
+.blog-cta {
+    background: linear-gradient(135deg, #333 0%, #555 100%);
+    color: white;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    margin: 50px 0;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.blog-cta h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.blog-cta p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.blog-cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.cta-button.primary {
+    background: white;
+    color: #333;
+}
+
+.cta-button.primary:hover {
+    background: #f0f0f0;
+    transform: translateY(-2px);
+}
+
+.cta-button.secondary {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.cta-button.secondary:hover {
+    background: white;
+    color: #333;
+    transform: translateY(-2px);
+}
+
+/* Related Posts */
+.related-posts {
+    border-top: 1px solid #e0e0e0;
+    padding-top: 40px;
+    margin-top: 50px;
+}
+
+.related-posts h3 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #333;
+    font-weight: 600;
+}
+
+.related-posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.related-post {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.related-post:hover {
+    transform: translateY(-5px);
+}
+
+.related-post a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.related-post img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.related-post-content {
+    padding: 20px;
+}
+
+.related-post-content h4 {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.related-post-content p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0;
+}
+
+/* Blog Navigation */
+.blog-navigation {
+    border-top: 1px solid #e0e0e0;
+    padding-top: 40px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.back-to-blog {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px 20px;
+    border: 2px solid #333;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.back-to-blog:hover {
+    background: #333;
+    color: white;
+}
+
+.blog-nav-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-btn {
+    color: #666;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+    font-weight: 400;
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+    background: #f0f0f0;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .blog-post-title {
+        font-size: 2rem;
+    }
+    
+    .blog-post-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .blog-post-info {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .blog-post-container {
+        padding: 40px 15px;
+    }
+    
+    .blog-section h2 {
+        font-size: 1.6rem;
+    }
+    
+    .blog-cta {
+        padding: 30px 20px;
+    }
+    
+    .blog-cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cta-button {
+        width: 100%;
+        max-width: 250px;
+        text-align: center;
+    }
+    
+    .related-posts-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .blog-navigation {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .blog-nav-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .nav-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .blog-post-hero {
+        height: 50vh;
+    }
+    
+    .blog-post-title {
+        font-size: 1.8rem;
+    }
+    
+    .blog-post-container {
+        padding: 30px 15px;
+    }
+    
+    .blog-section p,
+    .blog-intro {
+        font-size: 1rem;
+    }
+    
+    .blog-section h2 {
+        font-size: 1.4rem;
+    }
+}
