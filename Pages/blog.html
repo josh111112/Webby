@@ -254,5 +254,16 @@
             </div>
         </div>
     </footer>
+    <script>
+        document.querySelectorAll('.blog-post-card').forEach(card => {
+            const link = card.querySelector('.read-post-btn') || card.querySelector('.post-link');
+            if (link) {
+                card.addEventListener('click', () => {
+                    window.location.href = link.href;
+                });
+                link.addEventListener('click', e => e.stopPropagation());
+            }
+        });
+    </script>
 </body>
 </html>
