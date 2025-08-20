@@ -3104,3 +3104,48 @@ body {
         font-size: 0.9rem;
     }
 }
+
+/* === Portfolio Masonry (no-crop, contiguous) === */
+.gallery {
+    /* override the grid version */
+    display: block;
+    column-gap: 0;           /* zero gap = contiguous tiles */
+    line-height: 0;          /* remove inline gaps between inline-blocks */
+    column-fill: balance;
+}
+
+/* responsive column counts */
+@media (max-width: 599px)  { .gallery { column-count: 1; } }
+@media (min-width: 600px)  { .gallery { column-count: 2; } }
+@media (min-width: 900px)  { .gallery { column-count: 3; } }
+@media (min-width: 1400px) { .gallery { column-count: 4; } }
+
+/* each item */
+.gallery__link {
+    display: inline-block;   /* required for CSS columns */
+    width: 100%;
+    margin: 0;
+    padding: 0 !important;   /* override old padding */
+    break-inside: avoid;     /* prevents column breaks through items */
+    height: auto !important; /* override the fixed 400px height */
+    max-height: none !important;
+    border: none;
+}
+
+.gallery__thumb {
+    position: relative;
+    height: auto;            /* ensure figure isn’t constrained */
+    margin: 0;
+    padding: 0;
+}
+
+.gallery__image {
+    display: block;
+    width: 100%;
+    height: auto;            /* no cropping — keep natural aspect */
+    filter: none;            /* avoid grayscale flicker on hover if desired */
+}
+
+/* optional: hide captions under thumbnails, keep them for the lightbox */
+.gallery__caption { display: none; }
+  
