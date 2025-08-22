@@ -509,6 +509,12 @@ body {
     font-size: 2rem;
     font-weight: 400;
     margin: 1rem 0;
+    background: linear-gradient(to right, #e3e3e3, #f6f6f6);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+   
 }
 
 .brand-text {
@@ -614,15 +620,16 @@ body {
     margin-bottom: 20px;
     font-family: Copperplate, "Copperplate Gothic Light", serif;
     font-weight: 300;
-    width: 100%;
-    text-align: left;
+    width: 130%;
+    text-align: center;
 }
 
 .location-container p {
     font-family: "Courier New", Courier, monospace;
     line-height: 1.5;
+    width: 130%;
     margin: 0;
-    text-align: left;
+    text-align: center;
 }
 
 .bride-girl-closeup-photo {
@@ -943,6 +950,7 @@ body {
 }
 
 .process-content h2 {
+    text-align: center;
     font-size: 2.5rem;
     font-weight: 300;
     margin-bottom: 40px;
@@ -2779,7 +2787,7 @@ body {
     margin: 0;
     padding: 0;
     border: none;
-    vertical-align: top;
+    /* vertical-align: top; */
 }
 
 .gallery__image:hover {
@@ -3157,4 +3165,91 @@ body {
 
 /* optional: hide captions under thumbnails, keep them for the lightbox */
 .gallery__caption { display: none; }
+  
+/* --- Tiny button "chips" for inline links --- */
+:root{
+    /* tweak these to match your palette */
+    --accent: #156420;
+    --accent-contrast: #ffffff;
+    --chip-fg: #212c45;          /* text */
+    --chip-bg: rgba(255,255,255,0.75);
+    --chip-br: rgba(15, 23, 42, 0.18);
+  }
+  
+  .link-chips{
+    display: inline-flex;
+    gap: .5rem;
+    flex-wrap: wrap;
+    margin-top: .75rem;
+  }
+  
+  a.chip-btn{
+    display: inline-flex;
+    align-items: center;
+    gap: .4rem;
+    font-size: .875rem;           /* small */
+    line-height: 1;
+    padding: .55rem .7rem;
+    border-radius: 999px;
+    border: 1px solid var(--chip-br);
+    background: var(--chip-bg);
+    color: var(--chip-fg);
+    text-decoration: none;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.6);
+    transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease, background .2s ease, color .2s ease;
+    will-change: transform;
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+  }
+  
+  /* subtle movement + glow */
+  a.chip-btn:hover{
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(0,0,0,.08);
+    border-color: rgba(15, 23, 42, 0.28);
+  }
+  
+  /* keyboard accessibility */
+  a.chip-btn:focus-visible{
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+  
+  /* accent (filled) variant */
+  a.chip-btn--accent{
+    background: var(--accent);
+    color: var(--accent-contrast);
+    border-color: transparent;
+    box-shadow: 0 2px 8px rgba(91,141,239,.35);
+  }
+  a.chip-btn--accent:hover{
+    filter: brightness(1.05);
+  }
+  
+  /* tiny arrow */
+  a.chip-btn::after{
+    content: none;
+    font-size: .9em;
+    transform: translateX(0);
+    transition: transform .2s ease;
+  }
+  a.chip-btn:hover::after{
+    transform: translateX(2px);
+  }
+  
+  /* dark mode tune-up */
+  @media (prefers-color-scheme: dark){
+    :root{
+      --chip-fg: #e5e7eb;
+      --chip-bg: rgba(17,24,39,0.5);
+      --chip-br: rgba(255,255,255,0.18);
+    }
+  }
+  
+  /* reduce motion for those who prefer it */
+  @media (prefers-reduced-motion: reduce){
+    a.chip-btn, a.chip-btn::after{
+      transition: none;
+    }
+  }
   
