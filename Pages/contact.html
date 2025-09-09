@@ -1,100 +1,227 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Figtree:wght@300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="formStyles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <div class="page-container">
         <main class="main-content">
-            <!-- Full Page Contact Section -->
-            <div class="contact-fullpage">
-                <div class="contact-fullpage-wrapper">
-                    <!-- Left Side - Form -->
-                    <div class="contact-left">
-                        <div class="form-header">
-                            <h1>Let's Create Something Beautiful Together</h1>
-                            <p>Ready to capture your special moments? Fill out the form below and let's start planning something amazing together.</p>
+            <!-- Blog Hero Section -->
+            <section class="blog-hero">
+                <div class="blog-hero-overlay">
+                    <div class="blog-hero-text">
+                        <h1>Behind the Lens</h1>
+                        <p class="blog-hero-tagline">Stories, tips, and moments from my photography journey</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Featured Post -->
+            <section class="featured-post-section">
+                <div class="featured-post-container">
+                    <div class="featured-badge">Featured</div>
+                    <div class="featured-post-image">
+                        <img src="Assets/documentary-style.jpg" alt="Featured Post" class="featured-photo" loading="lazy">
+                    </div>
+                    <div class="featured-post-content">
+                        <div class="post-meta">
+                            <span class="post-category">Wedding Photography</span>
+                            <span class="post-date">March 15, 2024</span>
                         </div>
+                        <h2>Capturing the Perfect Wedding Moment: Tips from My Experience</h2>
+                        <p>Wedding photography is more than just taking pictures—it's about capturing emotions, preserving memories, and telling love stories. After a decade of photographing weddings, I've learned that the most beautiful moments often happen between the planned shots...</p>
+                        <a href="Blogs/perfectWeddingMoment.html" class="read-more-btn">Read Full Story</a>
+                    </div>
+                </div>
+            </section>
 
-                        <form
-                            action="https://formspree.io/f/xqablnrq"
-                            class="enhanced-form"
-                            target="_top"
-                            method="POST"
-                        >
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="your-name">Your Name</label>
-                                    <input type="text" id="your-name" name="your_name" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="partner-name">Partner's Name</label>
-                                    <input type="text" id="partner-name" name="partner_name">
-                                </div>
-                            </div>
+            <!-- Blog Categories -->
+            <!-- <section class="blog-categories">
+                <div class="categories-container">
+                    <h3>Explore Topics</h3>
+                    <div class="categories-list">
+                        <a href="#" class="category-tag active">All Posts</a>
+                        <a href="#" class="category-tag">Wedding Photography</a>
+                        <a href="#" class="category-tag">Portrait Sessions</a>
+                        <a href="#" class="category-tag">Photography Tips</a>
+                        <a href="#" class="category-tag">Behind the Scenes</a>
+                        <a href="#" class="category-tag">Client Stories</a>
+                    </div>
+                </div>
+            </section> -->
 
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="email">Email Address</label>
-                                    <input type="email" id="email" name="email" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="wedding-date">Wedding Date</label>
-                                    <input type="date" id="wedding-date" name="wedding_date">
-                                </div>
-                            </div>
-
-                            <div class="form-group full-width">
-                                <label for="vision">Tell Me About Your Vision</label>
-                                <textarea id="vision" name="vision" rows="4" placeholder="Share your story... What do you love doing together? How do you imagine your special day? Any specific ideas or inspiration you'd like to discuss?" required></textarea>
-                            </div>
-
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="instagram-yours">Your Instagram (optional)</label>
-                                    <input type="text" id="instagram-yours" name="instagram_yours" placeholder="@yourusername">
-                                </div>
-                                <div class="form-group">
-                                    <label for="instagram-partner">Partner's Instagram (optional)</label>
-                                    <input type="text" id="instagram-partner" name="instagram_partner" placeholder="@partnerusername">
+            <!-- Blog Posts Grid -->
+            <section class="blog-posts-section">
+                <div class="blog-posts-container">
+                    <div class="blog-posts-grid">
+                        <!-- Blog Post 1 -->
+                        <article class="blog-post-card">
+                            <div class="post-image">
+                                <img src="Assets/wedding-cheers.jpg" alt="Blog Post" class="post-photo" loading="lazy">
+                                <div class="post-overlay">
+                                    <a href="Blogs/tipsForPhotography.html" class="read-post-btn">Read Article</a>
                                 </div>
                             </div>
-
-                            <div class="form-group full-width">
-                                <label for="additional-info">Anything Else?</label>
-                                <textarea id="additional-info" name="additional_info" rows="3" placeholder="Budget range, location preferences, timeline, or any other details you'd like to share..."></textarea>
+                            <div class="post-content">
+                                <div class="post-meta">
+                                    <span class="post-category">Photography Tips</span>
+                                    <span class="post-date">March 20, 2024</span>
+                                </div>
+                                <h3>5 Essential Tips for Better Wedding Photography</h3>
+                                <p>Elevate your wedding photography with these professional techniques and insider secrets that will help you capture magical moments...</p>
+                                <div class="post-footer">
+                                    <span class="read-time"><i class="far fa-clock"></i> 6 min read</span>
+                                    <a href="Blogs/tipsForPhotography.html" class="post-link">Read More</a>
+                                </div>
                             </div>
+                        </article>
 
-                            <div class="form-submit">
-                                <button type="submit" class="submit-button">
-                                    <span>Send My Message</span>
-                                    <i class="fas fa-arrow-right"></i>
-                                </button>
+                        <!-- Blog Post 2 -->
+                        <article class="blog-post-card">
+                            <div class="post-image">
+                                <img src="Assets/true-to-color.jpg" alt="Blog Post" class="post-photo" loading="lazy">
+                                <div class="post-overlay">
+                                    <a href="Blogs/naturalLightPhotography.html" class="read-post-btn">Read Article</a>
+                                </div>
                             </div>
-                        </form>
+                            <div class="post-content">
+                                <div class="post-meta">
+                                    <span class="post-category">Photography Tips</span>
+                                    <span class="post-date">March 12, 2024</span>
+                                </div>
+                                <h3>The Art of Natural Light Photography</h3>
+                                <p>Discover how to harness natural light to create stunning portraits that capture authentic emotions and beautiful moments...</p>
+                                <div class="post-footer">
+                                    <span class="read-time"><i class="far fa-clock"></i> 5 min read</span>
+                                    <a href="Blogs/naturalLightPhotography.html" class="post-link">Read More</a>
+                                </div>
+                            </div>
+                        </article>
 
-                        <div class="response-promise">
-                            <i class="fas fa-clock"></i>
-                            <div>
-                                <h4>Quick Response</h4>
-                                <p>I typically respond within 24 hours</p>
+                        <!-- Blog Post 3 -->
+                        <article class="blog-post-card">
+                            <div class="post-image">
+                                <img src="Assets/venue.jpg" alt="Blog Post" class="post-photo" loading="lazy">
+                                <div class="post-overlay">
+                                    <a href="Blogs/myFavoriteWeddingVenues.html" class="read-post-btn">Read Article</a>
+                                </div>
                             </div>
-                        </div>
+                            <div class="post-content">
+                                <div class="post-meta">
+                                    <span class="post-category">Client Stories</span>
+                                    <span class="post-date">March 8, 2024</span>
+                                </div>
+                                <h3>My Favorite Wedding Venues</h3>
+                                <p>A list of my favorite wedding venues in West Michigan...</p>
+                                <div class="post-footer">
+                                    <span class="read-time"><i class="far fa-clock"></i> 7 min read</span>
+                                    <a href="Blogs/myFavoriteWeddingVenues.html" class="post-link">Read More</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Blog Post 4 -->
+                        <article class="blog-post-card">
+                            <div class="post-image">
+                                <img src="Assets/memirror.JPG" alt="Blog Post" class="post-photo" loading="lazy">
+                                <div class="post-overlay">
+                                    <a href="Blogs/dayInTheLife.html" class="read-post-btn">Read Article</a>
+                                </div>
+                            </div>
+                            <div class="post-content">
+                                <div class="post-meta">
+                                    <span class="post-category">Behind the Scenes</span>
+                                    <span class="post-date">March 5, 2024</span>
+                                </div>
+                                <h3>A Day in the Life: Wedding Photographer</h3>
+                                <p>Ever wondered what goes into capturing a wedding day? Take a behind-the-scenes look at my process...</p>
+                                <div class="post-footer">
+                                    <span class="read-time"><i class="far fa-clock"></i> 6 min read</span>
+                                    <a href="Blogs/dayInTheLife.html" class="post-link">Read More</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Blog Post 5 -->
+                        <article class="blog-post-card">
+                            <div class="post-image">
+                                <img src="Assets/photographystyle.jpg" alt="Blog Post" class="post-photo" loading="lazy">
+                                <div class="post-overlay">
+                                    <a href="Blogs/choosingPhotographyStyle.html" class="read-post-btn">Read Article</a>
+                                </div>
+                            </div>
+                            <div class="post-content">
+                                <div class="post-meta">
+                                    <span class="post-category">Wedding Photography</span>
+                                    <span class="post-date">March 1, 2024</span>
+                                </div>
+                                <h3>Choosing Your Wedding Photography Style</h3>
+                                <p>From documentary to fine art, understanding different photography styles to find what suits your vision...</p>
+                                <div class="post-footer">
+                                    <span class="read-time"><i class="far fa-clock"></i> 8 min read</span>
+                                    <a href="Blogs/choosingPhotographyStyle.html" class="post-link">Read More</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Blog Post 6 -->
+                        <article class="blog-post-card">
+                            <div class="post-image">
+                                <img src="Assets/engagementprep.jpg" alt="Blog Post" class="post-photo" loading="lazy">
+                                <div class="post-overlay">
+                                    <a href="Blogs/engagementSessionPrepGuide.html" class="read-post-btn">Read Article</a>
+                                </div>
+                            </div>
+                            <div class="post-content">
+                                <div class="post-meta">
+                                    <span class="post-category">Portrait Sessions</span>
+                                    <span class="post-date">February 28, 2024</span>
+                                </div>
+                                <h3>Engagement Session Preparation Guide</h3>
+                                <p>Everything you need to know to prepare for your engagement session and get the best results...</p>
+                                <div class="post-footer">
+                                    <span class="read-time"><i class="far fa-clock"></i> 4 min read</span>
+                                    <a href="Blogs/engagementSessionPrepGuide.html" class="post-link">Read More</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Blog Post 7 -->
+                        <article class="blog-post-card">
+                            <div class="post-image">
+                                <img src="Assets/camera.jpg" alt="Blog Post" class="post-photo" loading="lazy">
+                                <div class="post-overlay">
+                                    <a href="Blogs/essentialWeddingPhotographyEquipment.html" class="read-post-btn">Read Article</a>
+                                </div>
+                            </div>
+                            <div class="post-content">
+                                <div class="post-meta">
+                                    <span class="post-category">Photography Tips</span>
+                                    <span class="post-date">February 25, 2024</span>
+                                </div>
+                                <h3>Essential Wedding Photography Equipment</h3>
+                                <p>A comprehensive guide to the gear I use to capture perfect wedding moments in any situation...</p>
+                                <div class="post-footer">
+                                    <span class="read-time"><i class="far fa-clock"></i> 10 min read</span>
+                                    <a href="Blogs/essentialWeddingPhotographyEquipment.html" class="post-link">Read More</a>
+                                </div>
+                            </div>
+                        </article>
                     </div>
 
-                    <!-- Right Side - Image -->
-                    <!-- <div class="contact-right">
-                        <div class="contact-image">
-                            <img src="Assets/mecamera.jpg" alt="Behind the scenes photography" class="contact-photo" loading="lazy">
-                        </div>
+                    <!-- Load More Button -->
+                    <!-- <div class="load-more-container">
+                        <button class="load-more-btn">Load More Posts</button>
                     </div> -->
                 </div>
-            </div>
+            </section>
         </main>
         
         <nav class="side-nav">
@@ -102,14 +229,13 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="blog.html">Blog</a></li>
+                <li><a href="blog.html" class="current">Blog</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="contact.html" class="current">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </div>
 
-    <!-- Info bar -->
     <footer class="info-bar">
         <div class="brand">
             <h1>Joshua Johnson Visuals</h1>
@@ -134,5 +260,16 @@
             </div>
         </div>
     </footer>
+    <script>
+        document.querySelectorAll('.blog-post-card').forEach(card => {
+            const link = card.querySelector('.read-post-btn') || card.querySelector('.post-link');
+            if (link) {
+                card.addEventListener('click', () => {
+                    window.location.href = link.href;
+                });
+                link.addEventListener('click', e => e.stopPropagation());
+            }
+        });
+    </script>
 </body>
 </html>
