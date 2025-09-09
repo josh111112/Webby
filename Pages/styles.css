@@ -3253,3 +3253,58 @@ body {
     }
   }
   
+/* === Mobile bottom action bar === */
+.mobile-bottom-nav {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  /* Make index parallax scroll on mobile (iOS disables fixed) */
+  .parallax-section {
+    background-attachment: scroll;
+    height: 45vh;
+  }
+
+  /* Hide side nav on small screens */
+  .side-nav { display: none; }
+
+  /* Show simplified bottom action bar */
+  .mobile-bottom-nav {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10000;
+    display: flex;
+    gap: 8px;
+    padding: 10px 12px env(safe-area-inset-bottom);
+    background: rgba(0,0,0,0.85);
+    backdrop-filter: saturate(120%) blur(6px);
+    -webkit-backdrop-filter: saturate(120%) blur(6px);
+    box-shadow: 0 -6px 18px rgba(0,0,0,0.25);
+  }
+
+  .mobile-bottom-nav .mobile-nav-btn {
+    flex: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 12px;
+    padding: 14px 12px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    letter-spacing: .2px;
+    background: #156420;
+    color: #ffffff;
+    border: 1px solid rgba(255,255,255,0.12);
+  }
+
+  .mobile-bottom-nav .mobile-nav-btn:active {
+    transform: translateY(1px);
+  }
+
+  /* Prevent content from being hidden behind bottom bar */
+  body { padding-bottom: 78px; }
+}
+  
